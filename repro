@@ -1,0 +1,27 @@
+Git global setup
+git config --global user.name "Om Kulkarni"
+git config --global user.email "omkulkarni412@gmail.com"
+
+Create a new repository
+git clone https://gitlab.crio.do/COHORT_ME_QMONEY_V2_ENROLL_1657717705548/omkulkarni412-ME_QMONEY_V2.git
+cd omkulkarni412-ME_QMONEY_V2
+git switch -c master
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Push an existing folder
+cd existing_folder
+git init --initial-branch=master
+git remote add origin https://gitlab.crio.do/COHORT_ME_QMONEY_V2_ENROLL_1657717705548/omkulkarni412-ME_QMONEY_V2.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Push an existing Git repository
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin https://gitlab.crio.do/COHORT_ME_QMONEY_V2_ENROLL_1657717705548/omkulkarni412-ME_QMONEY_V2.git
+git push -u origin --all
+git push -u origin --tags
